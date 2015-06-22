@@ -814,6 +814,7 @@ textarea {
 .pfblock-subtitle {
     font-family: Raleway, "Times New Roman", Times, sans-serif;
     font-style: normal;
+    text-align: center;
     font-size: 18px;
 }
 
