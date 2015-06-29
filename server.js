@@ -1,21 +1,36 @@
-var 	http = require("http"),
-	url = require("url"),
-	path = require("path"),
-	fs = require("fs");
+var express = require('express');
+var nodemailer = require("nodemailer");
+var app = express();
 
-http.createServer(function(request, response){
-var name = url.parse(request.url).pathname;
-var filename = path.join(process.cwd(), name);
-fs.readFile(filename, "binary", function(err, file) {
-	if (err) {
-		response.writeHead(500, {"Content-Type": "text/plain"});
-		response.write(err + "\n");
-		response.end();
-		return;
+var smtpTransport = nodemailer.createTransport("SMTP",{
+	service: "Gmail",
+	auth: {
+	user: "yourID@gmail.com"
+	pass: "your gmail password"
 	}
-	response.writeHead(200);
-	response.write(file, "binary");
-	response.end();
 });
-}).listen(3000);
-console.log("Server is listening on port 3000.")
+
+app.get('/',function(req,res){
+	res.sendfile('index.html');
+});
+app.get('/send',function(req,res){
+	var mailOptions = {
+	to : req.query.to
+	subject : req.query.subject,
+	text : req.query.text
+	}
+	console.log(mailOptions);
+	smtpTransport.sendMail(mailOptions, function(error, response){
+		if (error){
+			console.log(error);
+			res.end("error");
+		}else{
+			console.log("Message sent: " + response.message);
+			res.end("sent");
+		}
+	});
+});
+
+app.listen(3000,function(){
+	console.log("Express started on port 3000");
+});
