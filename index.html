@@ -28,6 +28,23 @@
 
         <!--  CSS stylesheet file -->
         <link href="css/style.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		var from,to,subject,text;
+		$("#send_email").click(function(){
+			to = "muhsinking@gmail.com";
+			subject = $("#name").val();
+			text = $("#content").val();
+			$("#message").text("Sending... please wait");
+			$.get("/send",{to:to, subject:subject, text:text}, function(data){
+				if (data=="sent"){
+					$("#message").empty().html("Sent");
+				}
+			});
+		});
+	});
+	</script>
 
     </head>
 
@@ -114,26 +131,26 @@
 
                         <div class="col-sm-6 col-sm-offset-3 container object-non-visible" data-animation-effect="fadeIn">
 
-                            <form id="contact-form" role="form" method="post" action="send_dummy_form.php">
+                           <!-- <form id="contact-form" role="form" method="post" action="send_dummy_form.php"> -->
                                 <div class="ajax-hidden">
                                     <div class="form-group">
-                                        <label class="sr-only" for="c_name">Name</label>
-                                        <input type="text" id="c_name" class="form-control" name="name" placeholder="Name">
+                                        <label class="sr-only" for="name">Name</label>
+                                        <input type="text" id="name" class="form-control" name="name" placeholder="Name">
                                     </div>
 
                                     <div class="form-group wow fadeInUp" data-wow-delay=".1s">
-                                        <label class="sr-only" for="c_email">Email</label>
-                                        <input type="email" id="c_email" class="form-control" name="email" placeholder="E-mail">
+                                        <label class="sr-only" for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" name="email" placeholder="E-mail">
                                     </div>
 
                                     <div class="form-group wow fadeInUp" data-wow-delay=".2s">
-                                        <textarea class="form-control" id="c_message" name="message" rows="7" placeholder="Message"></textarea>
+                                        <textarea class="form-control" id="content" name="content" rows="7" placeholder="Message"></textarea>
                                     </div>
 
-                                    <input type="submit" value="Send" class="btn btn-default btn-block">
+                                    <button id = "send_email" class="btn btn-default btn-block"> <span id = "message"> Send </span> </button>
                                 </div>
 <!--                                <div class="ajax-response"></div>-->
-                            </form>
+                            <!-- </form> -->
 
                         </div><!-- .row -->
                     </div>
