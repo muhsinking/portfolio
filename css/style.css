@@ -157,9 +157,9 @@ p span{
 }
 
 .subfooter {
-    background-color: #fafafa;
-    border-top: 1px solid #f3f3f3;
-    border-bottom: 1px solid #f3f3f3;
+    background-color: #5a5a5a;
+    border-top: 1px solid #5a5a5a;
+    border-bottom: 1px solid #5a5a5a;
     padding: 40px 0;
 }
 .section {
@@ -324,6 +324,7 @@ p span{
 }
 .subfooter p {
     margin-bottom: 0;
+    color:white;
 }
 
 /* Template Components
