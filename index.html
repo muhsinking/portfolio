@@ -36,7 +36,7 @@
 		
 		$("#send_email").click(function(){
 			from = $("#email").val();
-			subject = $("#name").val() + " contacted you from from your portfolio";
+			subject = "Portfolio contact form from: " + $("#name").val();
 			text = $("#content").val();
 			$("#message").text("Sending... please wait");
 			console.log(from,subject,text);
