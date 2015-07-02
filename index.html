@@ -21,37 +21,15 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
         <!-- Font Awesome CSS -->
-        <link href="/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
         <!-- Plugins -->
-        <link href="/css/animations.css" rel="stylesheet">
+        <link href="css/animations.css" rel="stylesheet">
 
         <!--  CSS stylesheet file -->
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		
-		var from,to,subject,text;
-		
-		$("#send_email").click(function(){
-			to = $("#email").val();
-			subject = $("#name").val();
-			text = $("#content").val();
-			$("#message").text("Sending... please wait");
-			console.log(to,subject,text);
-
-			$.get("/send",{to:to, subject:subject, text:text}, function(data){
-				if (data=="sent"){
-					$("#message").text("Sent");
-				} else{
-					$("#message").text("Error :(");
-				}
-			});
-		});
-	});
-	</script>
-
+        
     </head>
 
     <body class="no-trans">
@@ -184,23 +162,25 @@
         <!-- JavaScript files placed at the end of the document so the pages load faster
 ================================================== -->
         <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="/plugins/jquery.min.js"></script>
-        <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Modernizr javascript -->
-        <script type="text/javascript" src="/plugins/modernizr.js"></script>
+        <script type="text/javascript" src="plugins/modernizr.js"></script>
 
         <!-- Isotope javascript -->
-        <script type="text/javascript" src="/plugins/isotope/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
 
         <!-- Backstretch javascript -->
-        <script type="text/javascript" src="/plugins/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
 
         <!-- Appear javascript -->
-        <script type="text/javascript" src="/plugins/jquery.appear.js"></script>
+        <script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
         <!-- Initialization of Plugins -->
-        <script type="text/javascript" src="/js/template.js"></script>
+        <script type="text/javascript" src="js/template.js"></script>
+        
+        <script type="text/javascript" src"js/sendcontact.js"></script>
 
     </body>
 </html>
