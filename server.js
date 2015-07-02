@@ -15,25 +15,6 @@ var transporter = nodemailer.createTransport(mandrillTransport({
 	}
 }));
 
-/*
-transporter.sendMail(
-	{
-	from: 'Mo King <muhsinking@gmail.com>',
-	to: 'muhsinking@gmail.com',
-	subject: 'hello world!',
-	text: 'Mandrilled'
-	},
-	function(error,info){
-		if (error){
-			console.log(error);
-		}
-		else{
-			console.log("Message sent");
-		}
-});
-*/
-
-
 app.get('/', function(req,res){
 	res.sendfile('index.html');
 });
