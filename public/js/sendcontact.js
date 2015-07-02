@@ -12,6 +12,9 @@ $(document).ready(function(){
         $.get("/send",{from:from, subject:subject, text:text}, function(data){
             if (data=="sent"){
                 $("#message").text("Sent");
+		$("#name").val('');
+		$("#email").val('');
+		$("#content").val('');
             } else{
                 $("#message").text("Error :(");
             }
