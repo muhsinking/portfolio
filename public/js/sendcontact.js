@@ -1,15 +1,15 @@
-
+(function($){
 $(document).ready(function(){
-    var from,to,subject,text;
+    var from,subject,text;
 
     $("#send_email").click(function(){
-        to = $("#email").val();
+        from = $("#email").val();
         subject = $("#name").val();
         text = $("#content").val();
         $("#message").text("Sending... please wait");
-        console.log(to,subject,text);
+        console.log(from,subject,text);
 
-        $.get("/send",{to:to, subject:subject, text:text}, function(data){
+        $.get("/send",{from:from, subject:subject, text:text}, function(data){
             if (data=="sent"){
                 $("#message").text("Sent");
             } else{
@@ -18,3 +18,4 @@ $(document).ready(function(){
         });
     });
 });
+})(this.jQuery);
