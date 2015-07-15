@@ -16,7 +16,7 @@ var transporter = nodemailer.createTransport(mandrillTransport({
 }));
 
 app.get('/', function(req,res){
-	res.sendFile('index.html');
+	res.sendfile('index.html');
 });
 
 app.get('/send', function(req,res){
