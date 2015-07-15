@@ -113,6 +113,11 @@ p span{
 
 /* Layout
 ----------------------------------------------------------------------------- */
+
+
+/* Banner styles */
+
+
 .header {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.10);
@@ -167,6 +172,9 @@ p span{
     padding: 80px 0;
 }
 
+
+/* Services styles */
+
 .services-header{
     /*    padding-top: 3%;*/
     height: 5%;
@@ -182,7 +190,7 @@ p span{
 }
 
 .services-row{
-    min-height: 30%;
+    min-height: 20%;
 }
 
 .services{
@@ -208,6 +216,39 @@ p span{
 }
 */
 
+
+/* Skills styles */
+.skills-header{
+    
+}
+
+.skills-row{
+    
+}
+
+#application-skills{
+    
+}
+
+#web-skills{
+    
+}
+
+#tools-skills{
+    
+}
+
+#os-skills{
+    
+}
+
+.skills{
+    
+}
+
+.skills-icon{
+    
+}
 
 /* Backgrounds
 ----------------------------------------------------------------------------- */
