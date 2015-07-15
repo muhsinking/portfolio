@@ -190,7 +190,7 @@ p span{
 }
 
 .services-row{
-    min-height: 20%;
+/*    min-height: 30%;*/
 }
 
 .services{
@@ -220,27 +220,37 @@ p span{
 /* Skills styles */
 
 .skills-row{
-    
+    min-height: 16%;
 }
 
 #skills-header{
-
+    background-color:darkblue;
 }
 
+#skills-header-caption{
+    /*    padding-top: 3%;*/
+    height: 5%;
+    min-height: 50px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
 #application-skills{
-    
+    background-color:orange;
 }
 
 #web-skills{
-    
+    background-color:greenyellow;
 }
 
 #tools-skills{
-    
+    background-color:rebeccapurple;
 }
 
 #os-skills{
-    
+    background-color:deeppink;
 }
 
 .skills{
