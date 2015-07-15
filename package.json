@@ -1,0 +1,25 @@
+{
+  "name": "muhsinking.com",
+  "version": "1.0.0",
+  "description": "The portfolio of Muhsin King",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.13.0",
+    "nodemailer": "~1.4.0",
+    "nodemailer-mandrill-transport": "~0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/muhsinking/portfolio.git"
+  },
+  "author": "Muhsin King",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/muhsinking/portfolio/issues"
+  }
+}
