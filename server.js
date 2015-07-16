@@ -15,11 +15,10 @@ app.use(
      src: __dirname + '/sass', 
      dest: __dirname + '/public/css',
      prefix:  '/css',
-     outputStyle: 'compressed',
+//     outputStyle: 'compressed',
      debug: true
  })
 );   
-
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,7 +36,7 @@ var transporter = nodemailer.createTransport(mandrillTransport({
 }));
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!'});
+  res.render('index');
 });
 
 app.get('/send', function(req,res){
