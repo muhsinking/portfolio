@@ -26,7 +26,7 @@ html
                         p Web Developer
                         p Robotics Researcher
                     .col-sm-5
-                        // h1 insert photo here     
+                        h1 insert photo here     
         #summary
             .banner
                 .container
@@ -78,6 +78,23 @@ html
         #projects
         
         #contact
+            .banner
+                .container
+                    .row
+                        h2 Let's work together.
+            .container
+                .row
+                    .col-sm-6
+                        .form-group
+                            label.sr-only(for = "name") Name
+                            input#name(type = "text", name = "name", placeholder = "Name")
+                        .form-group
+                            label.sr-only(for = "email") Email
+                            input#email(type = "email", name = "email", placeholder = "Email")
+                        .form-group
+                            textarea#content(name = "content", rows = "7", placeholder = "Message")
+                        button#send_email.btn.btn-default
+                            span#message Send
         
         #resume
         
