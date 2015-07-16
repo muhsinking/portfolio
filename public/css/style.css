@@ -105,6 +105,8 @@ p span{
 
 }
 
+
+
 .social-icon{
 /*    color:white;*/
 /*
@@ -192,6 +194,38 @@ text-decoration: none;
 
 }
 */
+
+
+
+.purple{
+    color:#9C7EF7;
+}
+
+.purple:hover
+
+.blue{
+    color:#7EC4F7;
+}
+
+.blue:hover{
+    
+}
+
+.orange{
+    color:#7EF7C4
+}
+
+.orange-hover{
+    
+}
+
+.fa-steam{
+    color:#F7D87E
+}
+
+.fa-yelp{
+    color:#F78181
+}
 
 
 #skills-header{

@@ -1,11 +1,32 @@
 var express = require('express');
 var nodemailer = require("nodemailer");
+var fs = require('fs');
+var sassMiddleware = require('node-sass-middleware');
+var path = require('path');
+var jade = require('jade');
+var mandrillApi = JSON.parse(fs.readFileSync('private/apikey.json','utf8'));
 var app = express();
 
-var fs = require('fs');
-var mandrillApi = JSON.parse(fs.readFileSync('private/apikey.json','utf8'));
+//app.set('views', __dirname);
+app.set('view engine', 'jade');
 
-app.use(express.static(__dirname + '/public'));
+app.use(
+ sassMiddleware({
+     src: __dirname + '/sass', 
+     dest: __dirname + '/public/css',
+     prefix:  '/css',
+     outputStyle: 'compressed',
+     debug: true
+ })
+);   
+
+
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+//app.use(express.static(__dirname + '/public'));
+
 
 var mandrillTransport = require('nodemailer-mandrill-transport');
 
@@ -15,8 +36,8 @@ var transporter = nodemailer.createTransport(mandrillTransport({
 	}
 }));
 
-app.get('/', function(req,res){
-	res.sendfile('index.html');
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
 
 app.get('/send', function(req,res){
