@@ -1,11 +1,11 @@
 // Theme variables
-$purple: #9C7EF7;
+$purple: #927adb;
 $purple-alt: #9C7EF7;
 
-$blue: #7EC4F7;
+$blue: #6fb4e6;
 $blue-alt: #9ad4ff;
 
-$green: #7EF7C4;
+$green: #7bdbb3;
 $green-alt: #a4f7d4;
 
 $yellow: #F7D87E;
@@ -60,6 +60,10 @@ body {
 #introduction .container{width:100%; background-color: #5a5a5a; color:white; text-align: center;
 }
 
+#introduction .col-md-3{
+    text-align: left;   
+}
+
 #introduction h1{
     font-size: 38px;
     font-weight: 800;
@@ -86,22 +90,19 @@ body {
 }
 
 
-
-
-
 // Skills section
-#skills .banner .container {background-color: $yellow;}
+#skills .banner .container {background-color: $purple;}
 
 #projects .banner .container {
-    background-color: $green;
-}
-
-#hobbies .banner .container {
     background-color: $blue;
 }
 
+#hobbies .banner .container {
+    background-color: $green;
+}
+
 #contact .banner .container {
-    background-color: $purple;
+    background-color: $green;
 }
 
 
