@@ -1,6 +1,6 @@
 // Theme variables
 $purple: #927adb;
-$purple-alt: #9C7EF7;
+$purple-alt: #b2a3e0;
 
 $blue: #6fb4e6;
 $blue-alt: #9ad4ff;
@@ -73,10 +73,18 @@ body {font-family: 'Open Sans', sans-serif; color:$dark-grey}
     .banner.container {background-color: $skills-color;}
 
     .container:not(.banner){min-width: 80%; max-width: 90%;}
-
-    .col-xs-10, .col-xs-2{text-align: left; padding:30px 0 30px 0;}
+    
+    .col-xs-4{text-align: center; padding:30px 0 30px 0;}
+    
+    .col-xs-8{text-align: left; padding:30px 0 30px 0;}
 
     .fa{color:$skills-color;}
+    
+    a {
+        color:$skills-color;
+        font-weight:bold;
+        &:hover{color:$purple-alt;text-decoration:none;}
+    }
 
 }
 
