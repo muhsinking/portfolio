@@ -1,28 +1,44 @@
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #5a5a5a; }
 
-.banner h1, h2, h3, h4 {
+.banner h1 {
+  padding-top: 20px; }
+
+.banner h1, .banner h2, .banner h3, .banner h4 {
   color: white;
-  font-weight: 800; }
+  font-weight: 800;
+  padding-bottom: 20px; }
+
+.banner {
+  position: relative; }
 
 .banner .container {
   min-height: 20%;
-  width: 100%;
-  position: relative;
-  overflow-y: hidden; }
-
-.banner .row {
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  width: 100%; }
 
 #introduction .container {
-  min-height: 30%; }
+  min-height: 50%;
+  background-color: #5a5a5a;
+  color: white; }
+
+#introduction h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px; }
+
+#introduction p {
+  font-size: 25px;
+  font-weight: 700; }
 
 #summary .banner .container {
   background-color: #F78181; }
+
+#summary .container {
+  clear: both; }
+
+#summary .col-md-3 .fa {
+  color: #F78181; }
 
 #skills .banner .container {
   background-color: #F7D87E; }

@@ -14,43 +14,95 @@ $yellow-alt: #fae7ae;
 $orange: #F78181;
 $orange-alt: #F79F81;
 
+$dark-grey: #5a5a5a;
+
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color:$dark-grey
 }
 
 
 // General banner styles
 
-.banner h1, h2, h3, h4 {
+.banner h1{
+    padding-top: 20px;
+}
+
+.banner h1, .banner h2, .banner h3, .banner h4 {
     color:white;
     font-weight: 800;
+    padding-bottom: 20px;
 }
 
-.banner .container{
+.banner{
+    // margin-bottom:30px;
+    position: relative;
+}
+
+.banner .container {
+    // Centers text vertically and horizontally
+    // text-align: center;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+
+    // position: relative;
     min-height:20%;
     width:100%;
-    position: relative;
-    overflow-y: hidden;
 }
 
-.banner .row {
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.banner .row{
+
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-50%);
 }
 
 // Section specific styles
 
 #introduction .container{
-    min-height: 30%;
+    min-height: 50%;
+    background-color: #5a5a5a;
+    color:white;
 }
+
+#introduction h1{
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#introduction p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
 
 #summary .banner .container {
     background-color: $orange;
 }
+
+#summary .container {
+    clear:both;
+}
+
+#summary .col-md-3{
+    // margin-top:10px;
+    // text-align: center;
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // min-height:20%;
+}
+
+#summary .col-md-3 .fa{
+    color:$orange;
+}
+
+
+
 
 #skills .banner .container {
     background-color: $yellow;
