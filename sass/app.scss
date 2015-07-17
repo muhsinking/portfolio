@@ -24,34 +24,11 @@ body {
 
 
 // General styles
+.banner .container {width:100%; padding: 35px 20px 50px 20px; text-align: center;}
 
-.container{
-//    padding:0 20px 0 20px;   
-}
+.banner .col-sm-12{text-align: center;}
 
-.banner .container { 
-    width:100%; 
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-//    transform: translate(-50%, -50%);
-    padding: 35px 20px 50px 20px;
-    text-align: center;
-}
-
-.banner .col-sm-12{
-    text-align: center;
-}
-
-.banner h1, .banner h2, .banner h3, .banner h4 { 
-    text-align: center;
-    line-height: 1.385;
-    color: #FFF;
-    font-weight: 500;
-    
-    // possibly make this desktop-only
-//    padding: 0 50px 0 50px;
-}
+.banner h1, .banner h2, .banner h3, .banner h4 {text-align: center; line-height: 1.385; color: #FFF; font-weight: 500;}
 
 
 // Section specific styles
@@ -64,16 +41,9 @@ body {
     text-align: left;   
 }
 
-#introduction h1{
-    font-size: 38px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
+#introduction h1{font-size: 38px; font-weight: 800; margin-bottom: 20px;}
 
-#introduction p{
-    font-size: 25px;
-    font-weight: 700;
-}
+#introduction p{font-size: 25px; font-weight: 700;}
 
 // Summary section
 #summary .banner {background-color: $orange;}
@@ -81,29 +51,19 @@ body {
 
 #summary .col-lg-3{padding: 30px 30px 30px 30px; text-align: center;}
 
-#summary .col-lg-3 .fa{
-    color:$orange;
-}
+#summary .col-lg-3 .fa{color:$orange;}
 
-#summary p{
-    font-size:17px;   
-}
+#summary p{font-size:17px;}
 
 
 // Skills section
 #skills .banner .container {background-color: $purple;}
 
-#projects .banner .container {
-    background-color: $blue;
-}
+#projects .banner .container {background-color: $blue;}
 
-#hobbies .banner .container {
-    background-color: $green;
-}
+#hobbies .banner .container {background-color: $green;}
 
-#contact .banner .container {
-    background-color: $green;
-}
+#contact .banner .container {background-color: $green;}
 
 
 // Mobile devices
