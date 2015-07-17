@@ -16,54 +16,83 @@ $orange-alt: #F79F81;
 
 $dark-grey: #5a5a5a;
 
+// Section themes
+$summary-color: $orange;
+$skills-color: $purple;
+$projects-color: $blue;
+$contact-color: $green;
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    color:$dark-grey
-}
+
+
+body {font-family: 'Open Sans', sans-serif; color:$dark-grey}
 
 
 // General styles
-.banner .container {width:100%; padding: 35px 20px 50px 20px; text-align: center;}
+.banner{
 
-.banner .col-sm-12{text-align: center;}
+    &.container{width:100%; padding: 35px 20px 50px 20px; text-align: center;}
 
-.banner h1, .banner h2, .banner h3, .banner h4 {text-align: center; line-height: 1.385; color: #FFF; font-weight: 500;}
+    .col-sm-12{text-align: center;}
+    
+    h1, h2, h3, h4{text-align: center; line-height: 1.385; color: #FFF; font-weight: 500;}
+
+}
 
 
 // Section specific styles
 
-// Introduction section
-#introduction .container{width:100%; background-color: #5a5a5a; color:white; text-align: center;
+#introduction{
+    
+    .container{width:100%; background-color: #5a5a5a; color:white; text-align: center;}
+    
+    .col-md-3{text-align: left;}
+    
+    h1{font-size: 38px; font-weight: 800; margin-bottom: 20px;}
+    
+    p{font-size: 25px; font-weight: 700;}
+
+}
+    
+
+#summary {
+    
+    .banner {background-color: $summary-color;}
+    
+    .col-lg-3{   
+        .fa{color:$summary-color;}
+        padding: 30px 30px 30px 30px; text-align: center;
+    }
+    
+    p{font-size:17px;}
+
 }
 
-#introduction .col-md-3{
-    text-align: left;   
+
+#skills{
+    
+    .banner.container {background-color: $skills-color;}
+
+    .container:not(.banner){min-width: 80%; max-width: 90%;}
+
+    .col-xs-10, .col-xs-2{text-align: left; padding:30px 0 30px 0;}
+
+    .fa{color:$skills-color;}
+
 }
 
-#introduction h1{font-size: 38px; font-weight: 800; margin-bottom: 20px;}
-
-#introduction p{font-size: 25px; font-weight: 700;}
-
-// Summary section
-#summary .banner {background-color: $orange;}
 
 
-#summary .col-lg-3{padding: 30px 30px 30px 30px; text-align: center;}
+#projects {
+    .banner.container {background-color: $projects-color;}
+}
+    
+#hobbies {
+    .banner.container {background-color: $green;}
+}
 
-#summary .col-lg-3 .fa{color:$orange;}
-
-#summary p{font-size:17px;}
-
-
-// Skills section
-#skills .banner .container {background-color: $purple;}
-
-#projects .banner .container {background-color: $blue;}
-
-#hobbies .banner .container {background-color: $green;}
-
-#contact .banner .container {background-color: $green;}
+#contact {
+    .banner.container {background-color: $contact-color;}
+}
 
 
 // Mobile devices
