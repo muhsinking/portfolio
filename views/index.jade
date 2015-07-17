@@ -17,7 +17,7 @@ html
         script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
         
     body
-        #introduction
+        section#introduction
             .container
                 .row
                     .col-sm-7
@@ -26,12 +26,12 @@ html
                         p Web Developer
                         p Robotics Researcher
                     .col-sm-5
-                         h1 insert photo here     
-        #summary
+                        h1 insert photo here     
+        section#summary
             .banner
                 .container
-                    .row
-                        h2 Nice to meet you.
+                    h1 Nice to meet you.
+                    h2 Have a look at what I do:
             .container
                 .row
                     .col-md-3
@@ -73,13 +73,39 @@ html
                             | framework or designing my own.
                         
             
-        #skills
+        section#skills
+            .banner
+                .container
+                        h1 Skills
+        section#projects
+            .banner
+                .container
+                        h1 Projects
+        section#hobbies
+            .banner
+                .container
+                        h1 Am I a good fit for your team?
+                        h3 When I'm away from the desk, I love to run, bike, and swim (sometimes all three in the same afternoon). I also love video games, as well as traditional games like Dungeons and Dragons.
+                        
+        section#contact
+            .banner
+                .container
+                    h1 Let's work together.
+                    h3 I'm looking for interesting projects or organizations to with after I graduate. If you think I'd be a good fit for you team, shoot me a message!
+            .container
+                .row
+                    .col-sm-6
+                        .form-group
+                            label.sr-only(for = "name") Name
+                            input#name(type = "text", name = "name", placeholder = "Name")
+                        .form-group
+                            label.sr-only(for = "email") Email
+                            input#email(type = "email", name = "email", placeholder = "Email")
+                        .form-group
+                            textarea#content(name = "content", rows = "7", placeholder = "Message")
+                        button#send_email.btn.btn-default
+                            span#message Send
         
-        #projects
-        
-        #contact
-        
-        #resume
         
         
         
