@@ -23,8 +23,11 @@ body {
 }
 
 
-// General banner styles
+// General styles
 
+.container{
+//    padding:0 20px 0 20px;   
+}
 
 .banner .container { 
     width:100%; 
@@ -32,15 +35,9 @@ body {
 //    top: 50%;
 //    left: 50%;
 //    transform: translate(-50%, -50%);
-    padding: 35px 0 50px 0;
+    padding: 35px 20px 50px 20px;
     text-align: center;
 }
-
-//.banner .row{
-//    position:relative;
-//    left: 50%;
-//    transform: translateX(-50%);
-//}
 
 .banner .col-sm-12{
     text-align: center;
@@ -53,7 +50,7 @@ body {
     font-weight: 500;
     
     // possibly make this desktop-only
-    padding: 0 50px 0 50px;
+//    padding: 0 50px 0 50px;
 }
 
 
@@ -74,20 +71,11 @@ body {
     font-weight: 700;
 }
 
-
-
-
 // Summary section
 #summary .banner {background-color: $orange;}
 
-#summary .container{width: 100%; padding-left:100px; padding-right:100px;}
 
-#summary .col-lg-3{padding: 30px 0 30px; text-align: center;}
-
-#summary .col-lg-3:not(:last-of-type){
-    padding-right: 20px;   
-}
-
+#summary .col-lg-3{padding: 30px 30px 30px 30px; text-align: center;}
 
 #summary .col-lg-3 .fa{
     color:$orange;
@@ -114,4 +102,17 @@ body {
 
 #contact .banner .container {
     background-color: $purple;
+}
+
+
+// Mobile devices
+@media (max-width: 786px){
+    
+}
+
+// Larger devices
+@media (min-width: 768px){
+    .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0 50px 0 50px;}
+    
+    #summary .container{width: 100%; padding-left:100px; padding-right:100px;}
 }
