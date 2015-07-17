@@ -32,8 +32,7 @@ body {
 //    top: 50%;
 //    left: 50%;
 //    transform: translate(-50%, -50%);
-    padding-top: 35px;
-    padding-bottom: 50px;
+    padding: 35px 0 50px 0;
     text-align: center;
 }
 
@@ -54,17 +53,14 @@ body {
     font-weight: 500;
     
     // possibly make this desktop-only
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0 50px;
 }
 
 
 // Section specific styles
 
-#introduction .container{
-    min-height: 50%;
-    background-color: #5a5a5a;
-    color:white;
+// Introduction section
+#introduction .container{width:100%; background-color: #5a5a5a; color:white; text-align: center;
 }
 
 #introduction h1{
@@ -72,6 +68,7 @@ body {
     font-weight: 800;
     margin-bottom: 20px;
 }
+
 #introduction p{
     font-size: 25px;
     font-weight: 700;
@@ -79,33 +76,33 @@ body {
 
 
 
-#summary .banner {
-    background-color: $orange;
+
+// Summary section
+#summary .banner {background-color: $orange;}
+
+#summary .container{width: 100%; padding-left:100px; padding-right:100px;}
+
+#summary .col-lg-3{padding: 30px 0 30px; text-align: center;}
+
+#summary .col-lg-3:not(:last-of-type){
+    padding-right: 20px;   
 }
 
-#summary .container {
-    clear:both;
-}
 
-#summary .col-md-3{
-    // margin-top:10px;
-    // text-align: center;
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // min-height:20%;
-}
-
-#summary .col-md-3 .fa{
+#summary .col-lg-3 .fa{
     color:$orange;
 }
 
-
-
-
-#skills .banner .container {
-    background-color: $yellow;
+#summary p{
+    font-size:17px;   
 }
+
+
+
+
+
+// Skills section
+#skills .banner .container {background-color: $yellow;}
 
 #projects .banner .container {
     background-color: $green;
