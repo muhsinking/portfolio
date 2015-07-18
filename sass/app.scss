@@ -6,7 +6,7 @@ $blue: #6fb4e6;
 $blue-alt: #9ad4ff;
 
 $green: #7bdbb3;
-$green-alt: #a4f7d4;
+$green-alt: #81c1a6;
 
 $yellow: #F7D87E;
 $yellow-alt: #fae7ae;
@@ -17,6 +17,7 @@ $orange-alt: #F79F81;
 $dark-grey: #2a2a2a;
 $darkish-grey: #5e5e5e;
 $lighter-grey: #515151;
+$light-grey: #919191;
 
 // Section themes
 $summary-color: $orange;
@@ -145,10 +146,41 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
     .banner.container {background-color: $green;}
 }
 
-#contact {
+#contact {background-color: $dark-grey;
     .banner.container {background-color: $contact-color;}
+    .col-sm-10{text-align: center;
+        h3{padding:30px 0 0 0;}
+        h2{padding:0 0 50px 0;}
+    }
+
+    .col-sm-6{text-align: center; padding-bottom: 100px;
+        .form-control{
+            background-color: $dark-grey;
+            border-color:$lighter-grey;
+            border-radius: 3px;
+            color:$light-grey;
+            &:focus{box-shadow: none; background-color: $lighter-grey; color:#fff;}
+            &#name, &#email{height: 45px;}
+            &#content {resize: vertical;}
+        }
+        .btn{
+            height:40px;
+            min-width: 100%;
+            font-size: 15px;
+            text-transform: uppercase;
+            color:$contact-color;
+            background-color: $dark-grey;
+            border: 1px solid $darkish-grey;
+            &:hover{color:#fff;background-color: $contact-color;border-color: $contact-color;}
+            &:focus{outline: none;}
+        }
+
+    }
 }
 
+#footer{
+
+}
 
 // Mobile devices
 @media (max-width: 786px){

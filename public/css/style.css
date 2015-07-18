@@ -98,7 +98,7 @@ p span{
 }
 
 .social-icon:not(:last-of-type){
-    margin-right:15px;   
+    margin-right:15px;
 }
 
 .social-button{
@@ -113,7 +113,7 @@ p span{
         border-style: solid;
     border-color: #F78181;
 */
-    border-radius: 50%;   
+    border-radius: 50%;
 /*    background-color: #F78181;*/
 /*
     height: 60px;
@@ -216,7 +216,7 @@ text-decoration: none;
 }
 
 .orange-hover{
-    
+
 }
 
 .fa-steam{
@@ -234,7 +234,7 @@ text-decoration: none;
 
 /*
 .center-skills{
-    position: relative;   
+    position: relative;
     text-align: center;
 
 }
