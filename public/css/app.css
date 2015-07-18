@@ -68,6 +68,9 @@ body {
   #introduction .fa-stack#yelp:hover .fa-circle {
     color: #F78181; }
 
+#summary .container:not(.banner) {
+  min-height: 35%; }
+
 #summary .banner {
   background-color: #F78181; }
 
@@ -77,12 +80,17 @@ body {
   #summary .col-lg-3 .fa {
     color: #F78181; }
 
+#summary .right {
+  text-align: right; }
+
+#summary .left {
+  text-align: left; }
+
 #summary p {
   font-size: 17px; }
 
 #summary h4 {
-  font-weight: bold;
-  font-size: 20px; }
+  font-size: 24px; }
 
 #skills .banner.container {
   background-color: #927adb; }

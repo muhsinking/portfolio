@@ -86,16 +86,22 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
 #summary {
 
+    .container:not(.banner){min-height:35%;}
+
     .banner {background-color: $summary-color;}
 
     .col-lg-3{
         .fa{color:$summary-color;}
-        padding: 30px 20px 30px 20px; text-align: center;
+        padding: 30px 20px 30px 20px;
+        text-align:center;
     }
+
+    .right{text-align: right;}
+    .left{text-align: left; }
 
     p{font-size:17px;}
 
-    h4{font-weight: bold; font-size: 20px;}
+    h4{ font-size: 24px;}
 
 }
 
