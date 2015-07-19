@@ -16,7 +16,7 @@ $orange-alt: #F79F81;
 
 $dark-grey: #2a2a2a;
 $darkish-grey: #6e6e6e;
-// #5e5e5e
+// old: #5e5e5e
 $lighter-grey: #515151;
 $light-grey: #919191;
 
@@ -26,95 +26,56 @@ $skills-color: $purple;
 $projects-color: $blue;
 $contact-color: $green;
 
-
-
+// General styles
 body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
-
-// General styles
 .banner{
-
     &.container{width:100%; padding: 35px 20px 50px 20px; text-align: center;}
-
     .col-sm-12{text-align: center;}
-
     h1, h2, h3, h4{text-align: center; line-height: 1.385; color: #FFF; font-weight: 500;}
-
 }
 
-
 // Section specific styles
-
 #introduction{
-
     .container{width:100%; background-color: $dark-grey; color:white; text-align:center; padding: 100px 0 100px 0;}
+    .col-sm-6{padding:0 50px 0 50px; &:first-child{text-align: right;} &:last-child{text-align:left;}}
 
-    .col-sm-6{
-        padding:0 50px 0 50px;
-        &:first-child{text-align: right;}
-        &:last-child{text-align:left;}
-    }
-
-    h1{font-size: 45px; font-weight: 400; margin: -4px 0 20px; }
+    h1{font-size: 45px; font-weight: 400; margin: -4px 0 20px;}
 
     p{font-size: 25px; color:$lighter-grey;  line-height: 200%;}
 
-    .photo{width:140px; height: 140px; background-color: $lighter-grey; border-radius: 50%;
-        background-size: 140px;
-        background-repeat: no-repeat;
-        background-position: 50% 20%;
-        background-image: url('../images/selfie-strange.jpg');
-        margin:5px 0 30px 0;
+    .photo{width:140px; height: 140px; background-color: $lighter-grey; border-radius: 50%; margin:5px 0 30px 0;
+        background-size: 140px; background-repeat: no-repeat; background-position: 50% 20%; background-image: url('../images/selfie-strange.jpg');
     }
 
     .fa-stack{color: $dark-grey;
-        &:not(#yelp){margin-right: 15px;}
         .fa-github, .fa-circle{color: $lighter-grey;}
-        .fa-github{font-size:55px;
-            &:hover{color:$purple;}
-        }
+        .fa-github{font-size:55px; &:hover{color:$purple;}}
 
+        &#github{margin-right:14px;padding-left:4px;}
+        &#mail,&#facebook{margin-right:15px;}
         &#linkedin:hover .fa-circle {color: $green;}
-
         &#facebook:hover .fa-circle {color: $blue;}
-
-        &#yelp:hover .fa-circle {color: $orange;}
-
-
+        &#mail:hover .fa-circle {color: $orange;}
     }
-
 }
-
 
 #summary {
-
     .container:not(.banner){min-height:35%;padding-top: 20px;}
-
     .banner {background-color: $summary-color;}
-
-    .col-lg-3{
-        .fa{color:$summary-color;}
-        padding: 30px 20px 30px 20px;
-        text-align:center;
-    }
-
+    .col-lg-3{padding: 30px 20px 30px 20px; text-align:center; .fa{color:$summary-color;}}
     .right{text-align: right;}
     .left{text-align: left; }
-
     p{font-size:17px;}
-
     h4{ font-size: 24px;}
-
 }
 
-
 #skills{
+    .fa{color:$skills-color;}
+    a {color:$skills-color; &:hover{color:$purple-alt;text-decoration:none;}}
 
     .banner.container {background-color: $skills-color;}
-
     .container:not(.banner){min-width: 80%; max-width: 95%; text-align: center;}
-
-    // hr{width: 50px;}
 
     .col-sm-5{text-align: right; padding:30px 0 30px 0;
         h1 {font-size:33px;}
@@ -124,28 +85,9 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
     .col-sm-7{text-align: left; padding:30px 0 30px 6%;
         h4{font-size:24px; margin-top:10px;}
-        .col-xs-1{
-            text-align: center;
-            i{
-
-                margin:5px 0 0;
-                font-size:18px;
-            }
-        }
-        .col-xs-11{
-            p{font-size:18px;padding-bottom: 20px;}
-        }
+        .col-xs-1{text-align: center; i{margin:5px 0 0; font-size:18px;}}
+        .col-xs-11{p{font-size:18px;padding-bottom: 20px;}}
     }
-
-    .fa{color:$skills-color;}
-
-
-
-    a {
-        color:$skills-color;
-        &:hover{color:$purple-alt;text-decoration:none;}
-    }
-
 }
 
 
@@ -160,59 +102,34 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
 #contact {background-color: $dark-grey;
     .banner.container {background-color: $contact-color;}
-    .col-sm-10{text-align: center;
-        h3{padding:30px 0 0 0;}
-        h2{padding:0 0 50px 0;}
-    }
+    .col-sm-10{text-align: center; h3{padding:30px 0 0 0;} h2{padding:0 0 50px 0;}}
 
     .col-sm-6{text-align: center; padding-bottom: 75px;
-        .form-control{
-            background-color: $dark-grey;
-            border-color:$lighter-grey;
-            border-radius: 3px;
-            color:$light-grey;
+        .form-control{background-color: $dark-grey; border-color:$lighter-grey; border-radius: 3px; color:$light-grey;
             &:focus{box-shadow: none; background-color: $lighter-grey; color:#fff;}
             &#name, &#email{height: 45px;}
             &#content {resize: vertical;}
         }
-        .btn{
-            height:40px;
-            min-width: 100%;
-            font-size: 15px;
-            text-transform: uppercase;
-            color:$contact-color;
-            background-color: $dark-grey;
-            border: 1px solid $darkish-grey;
+        .btn{height:40px; min-width: 100%; font-size: 15px; text-transform: uppercase;
+            color:$contact-color; background-color: $dark-grey; border: 1px solid $darkish-grey;
             &:hover{color:#fff;background-color: $contact-color;border-color: $contact-color;}
             &:focus{outline: none;}
         }
-
     }
 }
 
-#footer{
-    background-color: $dark-grey;
-    color:$light-grey;
-    text-align: center;
-    padding-bottom: 30px;
-
+#footer{background-color: $dark-grey; color:$light-grey; text-align: center; padding-bottom: 30px;
     a{color:$contact-color; &:hover{text-decoration: none; color:$green-alt;}}
-
 }
 
 // Mobile devices
 @media (max-width: 786px){
-    #introduction .col-sm-6 {
-        .photo{display: inline-block;};
-        &:first-child{text-align:center;}
-        &:last-child{text-align:center;}
-    }
+    #introduction .col-sm-6 {.photo{display: inline-block;}; &:first-child{text-align:center;} &:last-child{text-align:center;} }
     #skills .col-sm-5 {text-align: left; padding-left: 6%;}
 }
 
 // Larger devices
 @media (min-width: 768px){
     .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0 50px 0 50px;}
-
     #summary .container{width: 100%; padding-left:100px; padding-right:100px;}
 }
