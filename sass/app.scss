@@ -15,7 +15,8 @@ $orange: #F78181;
 $orange-alt: #F79F81;
 
 $dark-grey: #2a2a2a;
-$darkish-grey: #5e5e5e;
+$darkish-grey: #6e6e6e;
+// #5e5e5e
 $lighter-grey: #515151;
 $light-grey: #919191;
 
@@ -111,17 +112,30 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
     .banner.container {background-color: $skills-color;}
 
-    .container:not(.banner){min-width: 60%; max-width: 90%; text-align: center;}
+    .container:not(.banner){min-width: 80%; max-width: 95%; text-align: center;}
 
     // hr{width: 50px;}
 
-    .col-sm-5{text-align: right; padding:30px 0 30px 0;
+    .col-sm-4{text-align: right; padding:30px 0 30px 0;
         h1 {}
         h4 {font-size:15; color:$skills-color;}
         a, p {font-size: 20px;line-height: 200%;}
     }
 
-    .col-sm-7{text-align: left; padding:30px 0 30px 10%;}
+    .col-sm-8{text-align: left; padding:30px 0 30px 10%;
+        h4{font-size:24px; margin-top:10px;}
+        .col-xs-1{
+            text-align: center;
+            i{
+
+                margin:5px 0 0;
+                font-size:18px;
+            }
+        }
+        .col-xs-11{
+            p{font-size:18px;padding-bottom: 20px;}
+        }
+    }
 
     .fa{color:$skills-color;}
 
@@ -195,7 +209,7 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
         &:first-child{text-align:center;}
         &:last-child{text-align:center;}
     }
-    #skills .col-sm-5 {text-align: left; padding-left: 10%;}
+    #skills .col-sm-4 {text-align: left; padding-left: 10%;}
 }
 
 // Larger devices
