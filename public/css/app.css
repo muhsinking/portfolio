@@ -1,3 +1,7 @@
+html {
+  width: auto !important;
+  overflow-x: hidden !important; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #6e6e6e; }

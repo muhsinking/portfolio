@@ -27,6 +27,9 @@ $projects-color: $blue;
 $contact-color: $green;
 
 // General styles
+
+html{width: auto !important; overflow-x: hidden !important;}
+
 body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
 .banner{
