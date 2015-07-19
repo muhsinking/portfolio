@@ -1,0 +1,218 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e6e6e; }
+
+.banner.container {
+  width: 100%;
+  padding: 35px 20px 50px 20px;
+  text-align: center; }
+
+.banner .col-sm-12 {
+  text-align: center; }
+
+.banner h1, .banner h2, .banner h3, .banner h4 {
+  text-align: center;
+  line-height: 1.385;
+  color: #FFF;
+  font-weight: 500; }
+
+#introduction .container {
+  width: 100%;
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  padding: 100px 0 100px 0; }
+
+#introduction .col-sm-6 {
+  padding: 0 50px 0 50px; }
+  #introduction .col-sm-6:first-child {
+    text-align: right; }
+  #introduction .col-sm-6:last-child {
+    text-align: left; }
+
+#introduction h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin: -4px 0 20px; }
+
+#introduction p {
+  font-size: 25px;
+  color: #515151;
+  line-height: 200%; }
+
+#introduction .photo {
+  width: 140px;
+  height: 140px;
+  background-color: #515151;
+  border-radius: 50%;
+  margin: 5px 0 30px 0;
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-image: url("../images/selfie-strange.jpg"); }
+
+#introduction .fa-stack {
+  color: #2a2a2a; }
+  #introduction .fa-stack .fa-github, #introduction .fa-stack .fa-circle {
+    color: #515151; }
+  #introduction .fa-stack .fa-github {
+    font-size: 55px; }
+    #introduction .fa-stack .fa-github:hover {
+      color: #927adb; }
+  #introduction .fa-stack#github {
+    margin-right: 14px;
+    padding-left: 4px; }
+  #introduction .fa-stack#mail, #introduction .fa-stack#facebook {
+    margin-right: 15px; }
+  #introduction .fa-stack#linkedin:hover .fa-circle {
+    color: #7bdbb3; }
+  #introduction .fa-stack#facebook:hover .fa-circle {
+    color: #6fb4e6; }
+  #introduction .fa-stack#mail:hover .fa-circle {
+    color: #F78181; }
+
+#summary .container:not(.banner) {
+  min-height: 35%;
+  padding-top: 20px; }
+
+#summary .banner {
+  background-color: #F78181; }
+
+#summary .col-lg-3 {
+  padding: 30px 20px 30px 20px;
+  text-align: center; }
+  #summary .col-lg-3 .fa {
+    color: #F78181; }
+
+#summary .right {
+  text-align: right; }
+
+#summary .left {
+  text-align: left; }
+
+#summary p {
+  font-size: 17px; }
+
+#summary h4 {
+  font-size: 24px; }
+
+#skills .fa {
+  color: #927adb; }
+
+#skills a {
+  color: #927adb; }
+  #skills a:hover {
+    color: #b2a3e0;
+    text-decoration: none; }
+
+#skills .banner.container {
+  background-color: #927adb; }
+
+#skills .container:not(.banner) {
+  min-width: 80%;
+  max-width: 95%;
+  text-align: center; }
+
+#skills .col-sm-5 {
+  text-align: right;
+  padding: 30px 0 30px 0; }
+  #skills .col-sm-5 h1 {
+    font-size: 33px; }
+  #skills .col-sm-5 h4 {
+    font-size: 15;
+    color: #927adb; }
+  #skills .col-sm-5 a, #skills .col-sm-5 p {
+    font-size: 20px;
+    line-height: 200%; }
+
+#skills .col-sm-7 {
+  text-align: left;
+  padding: 30px 0 30px 6%; }
+  #skills .col-sm-7 h4 {
+    font-size: 24px;
+    margin-top: 10px; }
+  #skills .col-sm-7 .col-xs-1 {
+    text-align: center; }
+    #skills .col-sm-7 .col-xs-1 i {
+      margin: 5px 0 0;
+      font-size: 18px; }
+  #skills .col-sm-7 .col-xs-11 p {
+    font-size: 18px;
+    padding-bottom: 20px; }
+
+#projects .banner.container {
+  background-color: #6fb4e6; }
+
+#hobbies .banner.container {
+  background-color: #7bdbb3; }
+
+#contact {
+  background-color: #2a2a2a; }
+  #contact .banner.container {
+    background-color: #7bdbb3; }
+  #contact .col-sm-10 {
+    text-align: center; }
+    #contact .col-sm-10 h3 {
+      padding: 30px 0 0 0; }
+    #contact .col-sm-10 h2 {
+      padding: 0 0 50px 0; }
+  #contact .col-sm-6 {
+    text-align: center;
+    padding-bottom: 75px; }
+    #contact .col-sm-6 .form-control {
+      background-color: #2a2a2a;
+      border-color: #515151;
+      border-radius: 3px;
+      color: #919191; }
+      #contact .col-sm-6 .form-control:focus {
+        box-shadow: none;
+        background-color: #515151;
+        color: #fff; }
+      #contact .col-sm-6 .form-control#name, #contact .col-sm-6 .form-control#email {
+        height: 45px; }
+      #contact .col-sm-6 .form-control#content {
+        resize: vertical; }
+    #contact .col-sm-6 .btn {
+      height: 40px;
+      min-width: 100%;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #7bdbb3;
+      background-color: #2a2a2a;
+      border: 1px solid #6e6e6e; }
+      #contact .col-sm-6 .btn:hover {
+        color: #fff;
+        background-color: #7bdbb3;
+        border-color: #7bdbb3; }
+      #contact .col-sm-6 .btn:focus {
+        outline: none; }
+
+#footer {
+  background-color: #2a2a2a;
+  color: #919191;
+  text-align: center;
+  padding-bottom: 30px; }
+  #footer a {
+    color: #7bdbb3; }
+    #footer a:hover {
+      text-decoration: none;
+      color: #81c1a6; }
+
+@media (max-width: 786px) {
+  #introduction .col-sm-6 .photo {
+    display: inline-block; }
+  #introduction .col-sm-6:first-child {
+    text-align: center; }
+  #introduction .col-sm-6:last-child {
+    text-align: center; }
+  #skills .col-sm-5 {
+    text-align: left;
+    padding-left: 6%; } }
+
+@media (min-width: 768px) {
+  .banner h1, .banner h2, .banner h3, .banner h4 {
+    padding: 0 50px 0 50px; }
+  #summary .container {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px; } }
