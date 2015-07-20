@@ -12,13 +12,13 @@ app.set('view engine', 'jade');
 
 app.use(
  sassMiddleware({
-     src: __dirname + '/sass', 
+     src: __dirname + '/sass',
      dest: __dirname + '/public/css',
      prefix:  '/css',
 //     outputStyle: 'compressed',
      debug: true
  })
-);   
+);
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -47,9 +47,9 @@ app.get('/send', function(req,res){
 		subject : req.query.subject,
 		text : req.query.text
 	}
-	
+
 	console.log(mailOptions);
-	
+
 	transporter.sendMail(mailOptions, function(error, info){
 		if(error){
 			console.log(error);
