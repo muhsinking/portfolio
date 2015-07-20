@@ -76,14 +76,15 @@ body {
     color: #F78181; }
 
 #summary .container:not(.banner) {
-  min-height: 35%;
-  padding-top: 20px; }
+  padding-top: 35px;
+  padding-bottom: 20px; }
 
 #summary .banner {
   background-color: #F78181; }
 
 #summary .col-lg-3 {
-  padding: 30px 20px 30px 20px;
+  min-height: 25%;
+  padding: 0 20px 0 20px;
   text-align: center; }
   #summary .col-lg-3 .fa {
     color: #F78181; }
@@ -218,5 +219,5 @@ body {
     padding: 0 50px 0 50px; }
   #summary .container {
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px; } }
+    padding-left: 50px;
+    padding-right: 50px; } }

@@ -64,9 +64,12 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 }
 
 #summary {
-    .container:not(.banner){min-height:35%;padding-top: 20px;}
+    .container:not(.banner){padding-top: 35px; padding-bottom: 20px;
+    }
     .banner {background-color: $summary-color;}
-    .col-lg-3{padding: 30px 20px 30px 20px; text-align:center; .fa{color:$summary-color;}}
+    .col-lg-3{min-height: 25%;
+        padding: 0 20px 0 20px;
+        text-align:center; .fa{color:$summary-color;}}
     .right{text-align: right;}
     .left{text-align: left; }
     p{font-size:17px;}
@@ -134,5 +137,5 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 // Larger devices
 @media (min-width: 768px){
     .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0 50px 0 50px;}
-    #summary .container{width: 100%; padding-left:100px; padding-right:100px;}
+    #summary .container{width: 100%; padding-left:50px; padding-right:50px;}
 }
