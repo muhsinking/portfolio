@@ -19,7 +19,7 @@ $(document).ready(function(){
         }
 
         if(!isValidEmailAddress(from)){
-            $("#message").text("That doesn't look like an email address...");
+            $("#message").text("You sure that's your email?");
             return;
         }
 
