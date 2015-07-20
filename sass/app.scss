@@ -131,7 +131,7 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 // Mobile devices
 @media (max-width: 786px){
     #introduction .col-sm-6 {.photo{display: inline-block;}; &:first-child{text-align:center;} &:last-child{text-align:center;} }
-    #skills .col-sm-5 {text-align: left; padding-left: 6%;}
+    #skills .col-sm-5 {text-align: left; padding-left: 6%; p,h4{padding-left:8%;}}
 }
 
 // Larger devices

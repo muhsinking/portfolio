@@ -212,7 +212,9 @@ body {
     text-align: center; }
   #skills .col-sm-5 {
     text-align: left;
-    padding-left: 6%; } }
+    padding-left: 6%; }
+    #skills .col-sm-5 p, #skills .col-sm-5 h4 {
+      padding-left: 8%; } }
 
 @media (min-width: 768px) {
   .banner h1, .banner h2, .banner h3, .banner h4 {
