@@ -63,9 +63,17 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 }
 
 #summary {
-    .container:not(.banner){padding-top: 35px; padding-bottom: 20px;}
+    .container:not(.banner){
+        //padding-top: 35px; 
+        //padding-bottom: 20px;
+    }
     .banner {background-color: $summary-color;}
-    .col-lg-3{min-height: 25%; padding: 0 20px 0 20px; text-align:center; .fa{color:$summary-color;}}
+    .col-lg-3{
+//        min-height: 25%; 
+        padding: 3% 20px 3% 20px; 
+        text-align:center; 
+        .fa{color:$summary-color;}
+    }
     .right{text-align: right;}
     .left{text-align: left; }
     p{font-size:17px;}
@@ -127,11 +135,18 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 // Mobile devices
 @media (max-width: 786px){
     #introduction .col-sm-6 {.photo{display: inline-block;}; &:first-child{text-align:center;} &:last-child{text-align:center;} }
+    
+//    #summary .col-lg-3{height:25%}
+    
     #skills .col-sm-5 {text-align: left; padding-left: 6%; p,h4{padding-left:8%;}}
 }
 
 // Larger devices
 @media (min-width: 768px){
     .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0 50px 0 50px;}
-    #summary .container{width: 100%; padding-left:50px; padding-right:50px;}
+    #summary .container{
+        width: 100%; 
+        padding-left:50px; 
+        padding-right:50px;
+    }
 }
