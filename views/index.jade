@@ -298,33 +298,31 @@ html
                 .row
                     .col-sm-12
                         h1 Let's work together.
-            .container
+            #cont.container
+                .hex-tile
                 .row
-                    .col-sm-10.col-sm-offset-1
-                        h3 I'm looking for interesting projects or organizations to work with after I graduate. 
-                        h2 If you think I'd be a good fit for your team, shoot me a message!
-                    
-                    .col-sm-6.col-sm-offset-3
-                        .form-group
-                            label.sr-only(for = "name") Name
-                            input#name.form-control(type = "text", name = "name", placeholder = "Name")
-                        .form-group
-                            label.sr-only(for = "email") Email
-                            input#email.form-control(type = "email", name = "email", placeholder = "Email")
-                        .form-group
-                            textarea#content.form-control(name = "content", rows = "7", placeholder = "Message")
-                        button#send_email.btn
-                            span#message Send
-        
-        section#footer
-            .container
-                .row
-                    .col-sm-4.col-sm-offset-2.col-xs-6
-                        p Copyright © 2015 Muhsin King
-                    .col-sm-4.col-xs-6                        
-                        p 
-                            | Like this site? 
-                            a(href="https://github.com/muhsinking/portfolio") Check out the source code!
+                    .container
+                        .col-sm-10.col-sm-offset-1
+                            h3 I'm looking for interesting projects or organizations to work with after I graduate. 
+                            h2 If you think I'd be a good fit for your team, shoot me a message!
+                        
+                        .col-lg-6.col-lg-offset-3.col-sm-8.col-sm-offset-2
+                            .form-group
+                                label.sr-only(for = "name") Name
+                                input#name.form-control(type = "text", name = "name", placeholder = "Name")
+                            .form-group
+                                label.sr-only(for = "email") Email
+                                input#email.form-control(type = "email", name = "email", placeholder = "Email")
+                            .form-group
+                                textarea#content.form-control(name = "content", rows = "7", placeholder = "Message")
+                            button#send_email.btn
+                                span#message Send
+                        .col-sm-4.col-sm-offset-2.col-xs-6
+                            p Copyright © 2015 Muhsin King
+                        .col-sm-4.col-xs-6                        
+                            p 
+                                | Like this site? 
+                                a(href="https://github.com/muhsinking/portfolio") Check out the source code!
         
         
         

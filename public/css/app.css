@@ -16,13 +16,18 @@ body {
   opacity: .075;
   background-image: url("../images/hex-tile.png");
   background-attachment: fixed;
-  background-size: 88px 51px; }
+  background-size: 94px 54px; }
 
 .banner.container {
   width: 100%;
-  padding: 70px 20px 100px 20px;
+  padding: 45px 20px 60px 20px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75); }
+  .banner.container .hex-tile {
+    opacity: 0; }
   .banner.container .row {
     z-index: 2;
     position: relative; }
@@ -35,15 +40,12 @@ body {
         font-weight: 400;
         font-family: "Open Sans", sans-serif; }
 
-#introduction .hex-tile {
-  opacity: 0; }
-
 #introduction .container {
   width: 100%;
   background-color: #2a2a2a;
   color: white;
   text-align: center;
-  padding: 100px 0 100px 0;
+  padding: 150px 0 150px 0;
   position: relative; }
 
 #introduction .col-sm-6 {
@@ -189,49 +191,50 @@ body {
       padding: 30px 0 0 0; }
     #contact .col-sm-10 h2 {
       padding: 0 0 50px 0; }
-  #contact .container {
-    position: relative; }
-  #contact .col-sm-6 {
+  #contact #cont.container {
+    position: relative;
+    width: 100%;
     text-align: center;
-    padding-bottom: 75px; }
-    #contact .col-sm-6 .form-control {
-      background-color: #2a2a2a;
+    padding: 0 0 50px 0; }
+  #contact .col-lg-6 {
+    text-align: center;
+    padding-bottom: 75px;
+    z-index: 1; }
+    #contact .col-lg-6 .form-control {
+      background-color: transparent;
       border-color: #515151;
       border-radius: 3px;
       color: #919191; }
-      #contact .col-sm-6 .form-control:focus {
+      #contact .col-lg-6 .form-control:focus {
         box-shadow: none;
         background-color: #515151;
         color: #fff; }
-      #contact .col-sm-6 .form-control#name, #contact .col-sm-6 .form-control#email {
+      #contact .col-lg-6 .form-control#name, #contact .col-lg-6 .form-control#email {
         height: 45px; }
-      #contact .col-sm-6 .form-control#content {
+      #contact .col-lg-6 .form-control#content {
         resize: vertical; }
-    #contact .col-sm-6 .btn {
+    #contact .col-lg-6 .btn {
       height: 40px;
       min-width: 100%;
       font-size: 15px;
       text-transform: uppercase;
       color: #7bdbb3;
-      background-color: #2a2a2a;
+      background-color: transparent;
       border: 1px solid #6e6e6e; }
-      #contact .col-sm-6 .btn:hover {
+      #contact .col-lg-6 .btn:hover {
         color: #fff;
         background-color: #7bdbb3;
         border-color: #7bdbb3; }
-      #contact .col-sm-6 .btn:focus {
+      #contact .col-lg-6 .btn:focus {
         outline: none; }
-
-#footer {
-  background-color: #2a2a2a;
-  color: #919191;
-  text-align: center;
-  padding-bottom: 30px; }
-  #footer a {
-    color: #7bdbb3; }
-    #footer a:hover {
-      text-decoration: none;
-      color: #81c1a6; }
+  #contact .col-sm-4 {
+    text-align: center;
+    z-index: 1; }
+    #contact .col-sm-4 a {
+      color: #7bdbb3; }
+      #contact .col-sm-4 a:hover {
+        text-decoration: none;
+        color: #81c1a6; }
 
 @media (max-width: 786px) {
   #introduction .col-sm-6 .photo {
