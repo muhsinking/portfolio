@@ -27,14 +27,20 @@ $contact-color: $green;
 
 // General styles
 
+$ubuntu: 'Ubuntu', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+// $poiret-one: 'Poiret One', cursive;
+$quicksand: 'Quicksand', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
 html{width: auto !important; overflow-x: hidden !important;}
 
-body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
+body {font-family: $open-sans; color:$darkish-grey}
 
 .banner{
     &.container{width:100%; padding: 35px 20px 50px 20px; text-align: center;}
     .col-sm-12{text-align: center;}
-    h1, h2, h3, h4{text-align: center; line-height: 1.385; color: #FFF; font-weight: 500;}
+    h1{text-align: center; line-height: 1.385; color: #FFF; font-weight: 400; font-family: $open-sans;}
 }
 
 // Section specific styles
@@ -42,9 +48,9 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
     .container{width:100%; background-color: $dark-grey; color:white; text-align:center; padding: 100px 0 100px 0;}
     .col-sm-6{padding:0 50px 0 50px; &:first-child{text-align: right;} &:last-child{text-align:left;}}
 
-    h1{font-size: 45px; font-weight: 400; margin: -4px 0 20px;}
+    h1{font-size: 40px; font-family: $quicksand; font-weight: 400; margin: 10px 0 20px; text-transform: uppercase;}
 
-    p{font-size: 25px; color:$lighter-grey;  line-height: 200%;}
+    p{font-size: 25px; color:$lighter-grey; font-family: $ubuntu;  line-height: 180%;}
 
     .photo{width:140px; height: 140px; background-color: $lighter-grey; border-radius: 50%; margin:5px 0 30px 0;
         background-size: 140px; background-repeat: no-repeat; background-position: 50% 20%; background-image: url('../images/selfie-strange.jpg');
@@ -64,20 +70,20 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
 #summary {
     .container:not(.banner){
-        //padding-top: 35px; 
+        //padding-top: 35px;
         //padding-bottom: 20px;
     }
     .banner {background-color: $summary-color;}
     .col-lg-3{
-//        min-height: 25%; 
-        padding: 3% 20px 3% 20px; 
-        text-align:center; 
+//        min-height: 25%;
+        padding: 3% 20px 3% 20px;
+        text-align:center;
         .fa{color:$summary-color;}
     }
     .right{text-align: right;}
     .left{text-align: left; }
-    p{font-size:17px;}
-    h4{ font-size: 24px;}
+    p{font-size:17px; line-height: 200%;}
+    h4{ font-size: 24px; font-family: $raleway; font-weight: 300;}
 }
 
 #skills{
@@ -88,13 +94,13 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
     .container:not(.banner){min-width: 80%; max-width: 95%; text-align: center;}
 
     .col-sm-5{text-align: right; padding:30px 0 30px 0;
-        h1 {font-size:33px;}
-        h4 {font-size:15; color:$skills-color;}
-        a, p {font-size: 20px;line-height: 200%;}
+        h1 {font-size:33px; font-family: $raleway; font-weight: 300; }
+        h4 {font-size:15; color:$skills-color; font-family: $open-sans;}
+        a, p {font-size: 20px;line-height: 200%; font-family: $ubuntu;}
     }
 
     .col-sm-7{text-align: left; padding:30px 0 30px 6%;
-        h4{font-size:24px; margin-top:10px;}
+        h4{font-size:24px; margin-top:10px; font-family: $open-sans; }
         .col-xs-1{text-align: center; i{margin:5px 0 0; font-size:18px;}}
         .col-xs-11{p{font-size:18px;padding-bottom: 20px;}}
     }
@@ -112,7 +118,7 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 
 #contact {background-color: $dark-grey;
     .banner.container {background-color: $contact-color;}
-    .col-sm-10{text-align: center; h3{padding:30px 0 0 0;} h2{padding:0 0 50px 0;}}
+    .col-sm-10{text-align: center; font-family: $open-sans; h3{padding:30px 0 0 0;} h2{padding:0 0 50px 0;}}
 
     .col-sm-6{text-align: center; padding-bottom: 75px;
         .form-control{background-color: $dark-grey; border-color:$lighter-grey; border-radius: 3px; color:$light-grey;
@@ -135,9 +141,9 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 // Mobile devices
 @media (max-width: 786px){
     #introduction .col-sm-6 {.photo{display: inline-block;}; &:first-child{text-align:center;} &:last-child{text-align:center;} }
-    
+
 //    #summary .col-lg-3{height:25%}
-    
+
     #skills .col-sm-5 {text-align: left; padding-left: 6%; p,h4{padding-left:8%;}}
 }
 
@@ -145,8 +151,8 @@ body {font-family: 'Open Sans', sans-serif; color:$darkish-grey}
 @media (min-width: 768px){
     .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0 50px 0 50px;}
     #summary .container{
-        width: 100%; 
-        padding-left:50px; 
+        width: 100%;
+        padding-left:50px;
         padding-right:50px;
     }
 }
