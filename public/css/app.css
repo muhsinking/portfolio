@@ -3,7 +3,7 @@ html {
   overflow-x: hidden !important; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #6e6e6e; }
 
 .banner.container {
@@ -14,11 +14,12 @@ body {
 .banner .col-sm-12 {
   text-align: center; }
 
-.banner h1, .banner h2, .banner h3, .banner h4 {
+.banner h1 {
   text-align: center;
   line-height: 1.385;
   color: #FFF;
-  font-weight: 500; }
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif; }
 
 #introduction .container {
   width: 100%;
@@ -35,14 +36,17 @@ body {
     text-align: left; }
 
 #introduction h1 {
-  font-size: 45px;
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  margin: -4px 0 20px; }
+  margin: 10px 0 20px;
+  text-transform: uppercase; }
 
 #introduction p {
   font-size: 25px;
   color: #515151;
-  line-height: 200%; }
+  font-family: "Ubuntu", sans-serif;
+  line-height: 180%; }
 
 #introduction .photo {
   width: 140px;
@@ -91,10 +95,13 @@ body {
   text-align: left; }
 
 #summary p {
-  font-size: 17px; }
+  font-size: 17px;
+  line-height: 200%; }
 
 #summary h4 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300; }
 
 #skills .fa {
   color: #927adb; }
@@ -117,20 +124,25 @@ body {
   text-align: right;
   padding: 30px 0 30px 0; }
   #skills .col-sm-5 h1 {
-    font-size: 33px; }
+    font-size: 33px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300; }
   #skills .col-sm-5 h4 {
     font-size: 15;
-    color: #927adb; }
+    color: #927adb;
+    font-family: "Open Sans", sans-serif; }
   #skills .col-sm-5 a, #skills .col-sm-5 p {
     font-size: 20px;
-    line-height: 200%; }
+    line-height: 200%;
+    font-family: "Ubuntu", sans-serif; }
 
 #skills .col-sm-7 {
   text-align: left;
   padding: 30px 0 30px 6%; }
   #skills .col-sm-7 h4 {
     font-size: 24px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif; }
   #skills .col-sm-7 .col-xs-1 {
     text-align: center; }
     #skills .col-sm-7 .col-xs-1 i {
@@ -151,7 +163,8 @@ body {
   #contact .banner.container {
     background-color: #7bdbb3; }
   #contact .col-sm-10 {
-    text-align: center; }
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
     #contact .col-sm-10 h3 {
       padding: 30px 0 0 0; }
     #contact .col-sm-10 h2 {
