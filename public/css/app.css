@@ -28,6 +28,14 @@ body {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75); }
   .banner.container .hex-tile {
     opacity: 0; }
+  .banner.container#summary {
+    -webkit-box-shadow: 0px -10px 30px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -10px 30px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -10px 30px 5px rgba(0, 0, 0, 0.75); }
+  .banner.container#contact {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75); }
   .banner.container .row {
     z-index: 2;
     position: relative; }

@@ -55,12 +55,27 @@ body {font-family: $open-sans; color:$darkish-grey}
 }
 
 .banner{
+
     &.container{width:100%; padding: 45px 20px 60px 20px; text-align: center; position: relative;
 
         .hex-tile{opacity: 0;}
+
         -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+
+        &#summary{
+            -webkit-box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
+            box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
+        }
+
+        &#contact{
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+        }
+
         .row{
             z-index: 2;
             position: relative;
