@@ -256,8 +256,8 @@ body {
     padding-left: 6%; }
     #skills .col-sm-5 p, #skills .col-sm-5 h4 {
       padding-left: 8%; }
-  #skills .col-sm-7 .col-xs-1 {
-    width: 0px; }
+  #skills .col-sm-7 .col-xs-11 {
+    padding-bottom: 5px; }
   #skills .col-sm-7 .fa {
     opacity: 0; } }
 

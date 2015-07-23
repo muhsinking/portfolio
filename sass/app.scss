@@ -203,7 +203,7 @@ body {font-family: $open-sans; color:$darkish-grey}
 @media (max-width: 786px){
     #introduction .col-sm-6 {.photo{display: inline-block;}; &:first-child{text-align:center;} &:last-child{text-align:center;} }
 
-    #skills {.col-sm-5 {text-align: left; padding-left: 6%; p,h4{padding-left:8%;} } .col-sm-7{.col-xs-1{width:0px;} .fa{opacity: 0;}}}
+    #skills {.col-sm-5 {text-align: left; padding-left: 6%; p,h4{padding-left:8%;} } .col-sm-7{.col-xs-11{padding-bottom: 5px;} .fa{opacity: 0;}}}
 }
 
 // Larger devices
