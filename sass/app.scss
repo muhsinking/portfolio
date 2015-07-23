@@ -25,6 +25,16 @@ $skills-color: $purple;
 $projects-color: $blue;
 $contact-color: $green;
 
+$ts-distance: 8px;
+$ts-blur: 12px;
+$ts-opacity: 1;
+
+$bs-distance: 8px;
+$bs-blur:30px;
+$bs-opacity: .75;
+$bs-spread: 1px;
+
+
 // General styles
 
 $ubuntu: 'Ubuntu', sans-serif;
@@ -89,7 +99,7 @@ body {font-family: $open-sans; color:$darkish-grey}
 
 // Section specific styles
 #introduction{
-
+    text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
     .container{width:100%; background-color: $dark-grey; color:white; text-align:center; padding: 150px 0 150px 0; position: relative;
     }
     .col-sm-6{z-index: 2; padding:0 50px 0 50px; &:first-child{text-align: right;} &:last-child{text-align:left;}}
@@ -100,10 +110,14 @@ body {font-family: $open-sans; color:$darkish-grey}
     p{font-size: 25px; color:$lighter-grey; font-family: $ubuntu;  line-height: 180%;}
 
     .photo{width:140px; height: 140px; background-color: $lighter-grey; border-radius: 50%; margin:5px 0 30px 0;
+        -webkit-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+        -moz-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+        box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
         background-size: 140px; background-repeat: no-repeat; background-position: 50% 20%; background-image: url('../images/selfie-strange.jpg');
     }
 
     .fa-stack{color: $dark-grey;
+        .fa-stack-1x{text-shadow:none;}
         .fa-github, .fa-circle{color: $lighter-grey;}
         .fa-github{font-size:55px; &:hover{color:$purple;}}
 
@@ -167,28 +181,46 @@ body {font-family: $open-sans; color:$darkish-grey}
 
 #contact {background-color: $dark-grey;
     .banner.container {background-color: $contact-color;}
-    .col-sm-10{text-align: center; font-family: $open-sans; h3{padding:30px 0 0 0;} h2{padding:0 0 50px 0;}}
+    .col-sm-10{z-index: 1; text-align: center; font-family: $open-sans; h3{padding:30px 0 0 0;} h2{padding:0 0 50px 0;}
+    text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);}
 
     #cont.container{position: relative; width: 100%; text-align: center; padding: 0 0 50px 0;}
-    .col-lg-6{text-align: center; padding-bottom: 75px;z-index: 1;
+    .col-lg-6{text-align: center; padding-bottom: 75px; z-index: 1;
+
         .form-control{
+            text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
             // background-color: $dark-grey;
             background-color: rgba(0,0,0,0);
             border-color:$lighter-grey; border-radius: 3px; color:$light-grey;
-            &:focus{box-shadow: none; background-color: $lighter-grey; color:#fff;}
+            &:focus{
+                text-shadow: none;
+                // box-shadow: none;
+
+                -webkit-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+                -moz-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+                box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+
+                background-color: $lighter-grey;
+                color:#fff;}
             &#name, &#email{height: 45px;}
             &#content {resize: vertical;}
         }
         .btn{height:40px; min-width: 100%; font-size: 15px; text-transform: uppercase;
+            text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
             color:$contact-color;
             // background-color: $dark-grey;
             background-color: rgba(0,0,0,0);
             border: 1px solid $darkish-grey;
-            &:hover{color:#fff;background-color: $contact-color;border-color: $contact-color;}
+            &:hover{text-shadow:none; color:#fff;background-color: $contact-color;border-color: $contact-color;
+                -webkit-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+                -moz-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+                box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
+            }
             &:focus{outline: none;}
         }
     }
     .col-sm-4{
+        text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
         text-align: center;
         z-index: 1;
         a{color:$contact-color; &:hover{text-decoration: none; color:$green-alt;}}

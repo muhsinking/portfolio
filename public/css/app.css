@@ -48,65 +48,67 @@ body {
         font-weight: 400;
         font-family: "Open Sans", sans-serif; }
 
-#introduction .container {
-  width: 100%;
-  background-color: #2a2a2a;
-  color: white;
-  text-align: center;
-  padding: 150px 0 150px 0;
-  position: relative; }
-
-#introduction .col-sm-6 {
-  z-index: 2;
-  padding: 0 50px 0 50px; }
-  #introduction .col-sm-6:first-child {
-    text-align: right; }
-  #introduction .col-sm-6:last-child {
-    text-align: left; }
-
-#introduction h1 {
-  font-size: 40px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  margin: 10px 0 20px;
-  text-transform: uppercase; }
-
-#introduction p {
-  font-size: 25px;
-  color: #515151;
-  font-family: "Ubuntu", sans-serif;
-  line-height: 180%; }
-
-#introduction .photo {
-  width: 140px;
-  height: 140px;
-  background-color: #515151;
-  border-radius: 50%;
-  margin: 5px 0 30px 0;
-  background-size: 140px;
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-image: url("../images/selfie-strange.jpg"); }
-
-#introduction .fa-stack {
-  color: #2a2a2a; }
-  #introduction .fa-stack .fa-github, #introduction .fa-stack .fa-circle {
-    color: #515151; }
-  #introduction .fa-stack .fa-github {
-    font-size: 55px; }
-    #introduction .fa-stack .fa-github:hover {
-      color: #927adb; }
-  #introduction .fa-stack#github {
-    margin-right: 14px;
-    padding-left: 4px; }
-  #introduction .fa-stack#mail, #introduction .fa-stack#facebook {
-    margin-right: 15px; }
-  #introduction .fa-stack#linkedin:hover .fa-circle {
-    color: #7bdbb3; }
-  #introduction .fa-stack#facebook:hover .fa-circle {
-    color: #6fb4e6; }
-  #introduction .fa-stack#mail:hover .fa-circle {
-    color: #F78181; }
+#introduction {
+  text-shadow: 0px 8px 12px black; }
+  #introduction .container {
+    width: 100%;
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    position: relative; }
+  #introduction .col-sm-6 {
+    z-index: 2;
+    padding: 0 50px 0 50px; }
+    #introduction .col-sm-6:first-child {
+      text-align: right; }
+    #introduction .col-sm-6:last-child {
+      text-align: left; }
+  #introduction h1 {
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    text-transform: uppercase; }
+  #introduction p {
+    font-size: 25px;
+    color: #515151;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 180%; }
+  #introduction .photo {
+    width: 140px;
+    height: 140px;
+    background-color: #515151;
+    border-radius: 50%;
+    margin: 5px 0 30px 0;
+    -webkit-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-image: url("../images/selfie-strange.jpg"); }
+  #introduction .fa-stack {
+    color: #2a2a2a; }
+    #introduction .fa-stack .fa-stack-1x {
+      text-shadow: none; }
+    #introduction .fa-stack .fa-github, #introduction .fa-stack .fa-circle {
+      color: #515151; }
+    #introduction .fa-stack .fa-github {
+      font-size: 55px; }
+      #introduction .fa-stack .fa-github:hover {
+        color: #927adb; }
+    #introduction .fa-stack#github {
+      margin-right: 14px;
+      padding-left: 4px; }
+    #introduction .fa-stack#mail, #introduction .fa-stack#facebook {
+      margin-right: 15px; }
+    #introduction .fa-stack#linkedin:hover .fa-circle {
+      color: #7bdbb3; }
+    #introduction .fa-stack#facebook:hover .fa-circle {
+      color: #6fb4e6; }
+    #introduction .fa-stack#mail:hover .fa-circle {
+      color: #F78181; }
 
 #summary .banner {
   background-color: #F78181; }
@@ -193,8 +195,10 @@ body {
   #contact .banner.container {
     background-color: #7bdbb3; }
   #contact .col-sm-10 {
+    z-index: 1;
     text-align: center;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 8px 12px black; }
     #contact .col-sm-10 h3 {
       padding: 30px 0 0 0; }
     #contact .col-sm-10 h2 {
@@ -209,12 +213,16 @@ body {
     padding-bottom: 75px;
     z-index: 1; }
     #contact .col-lg-6 .form-control {
+      text-shadow: 0px 8px 12px black;
       background-color: transparent;
       border-color: #515151;
       border-radius: 3px;
       color: #919191; }
       #contact .col-lg-6 .form-control:focus {
-        box-shadow: none;
+        text-shadow: none;
+        -webkit-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
         background-color: #515151;
         color: #fff; }
       #contact .col-lg-6 .form-control#name, #contact .col-lg-6 .form-control#email {
@@ -226,16 +234,22 @@ body {
       min-width: 100%;
       font-size: 15px;
       text-transform: uppercase;
+      text-shadow: 0px 8px 12px black;
       color: #7bdbb3;
       background-color: transparent;
       border: 1px solid #6e6e6e; }
       #contact .col-lg-6 .btn:hover {
+        text-shadow: none;
         color: #fff;
         background-color: #7bdbb3;
-        border-color: #7bdbb3; }
+        border-color: #7bdbb3;
+        -webkit-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 8px 30px 1px rgba(0, 0, 0, 0.75); }
       #contact .col-lg-6 .btn:focus {
         outline: none; }
   #contact .col-sm-4 {
+    text-shadow: 0px 8px 12px black;
     text-align: center;
     z-index: 1; }
     #contact .col-sm-4 a {
