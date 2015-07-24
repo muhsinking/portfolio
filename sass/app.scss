@@ -64,7 +64,7 @@ html,body
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: .075;
+    opacity: .1;
     background-image: url('../images/hex-tile.png');
     background-attachment: fixed;
     // background-size: 59px 34px;
@@ -79,20 +79,20 @@ html,body
 
         .hex-tile{opacity: 0;}
 
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
 
         &#summary{
-            -webkit-box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
-            box-shadow: 0px -10px 30px 5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
         }
 
         &#contact{
-            -webkit-box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.75);
-            box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
         }
 
         .row{
