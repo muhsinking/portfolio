@@ -39,7 +39,6 @@ $bs-spread: 1px;
 
 $ubuntu: 'Ubuntu', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
-// $poiret-one: 'Poiret One', cursive;
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
 
@@ -139,15 +138,10 @@ html,body
 }
 
 #summary {
-    .container:not(.banner){
-        //padding-top: 35px;
-        //padding-bottom: 20px;
-    }
     .banner {
         background-color: $summary-color;
     }
     .col-lg-3{
-        //        min-height: 25%;
         padding: 3% 20px 3% 20px;
         text-align:center;
         .fa{color:$summary-color;}
@@ -198,12 +192,10 @@ html,body
 
         .form-control{
             text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
-            // background-color: $dark-grey;
             background-color: rgba(0,0,0,0);
             border-color:$lighter-grey; border-radius: 3px; color:$light-grey;
             &:focus{
                 text-shadow: none;
-                // box-shadow: none;
 
                 -webkit-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
                 -moz-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
@@ -217,7 +209,6 @@ html,body
         .btn{height:40px; min-width: 100%; font-size: 15px; text-transform: uppercase;
             text-shadow: 0px $ts-distance $ts-blur rgba(0, 0, 0, $ts-opacity);
             color:$contact-color;
-            // background-color: $dark-grey;
             background-color: rgba(0,0,0,0);
             border: 1px solid $darkish-grey;
             &:hover{text-shadow:none; color:#fff;background-color: $contact-color;border-color: $contact-color;
@@ -235,10 +226,6 @@ html,body
         a{color:$contact-color; &:hover{text-decoration: none; color:$green-alt;}}
     }
 }
-
-// #footer{background-color: $dark-grey; color:$light-grey; text-align: center; padding-bottom: 30px;
-//     a{color:$contact-color; &:hover{text-decoration: none; color:$green-alt;}}
-// }
 
 // Mobile devices
 @media (max-width: 786px){

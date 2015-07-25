@@ -7,7 +7,6 @@ var jade = require('jade');
 var mandrillApi = JSON.parse(fs.readFileSync('private/apikey.json','utf8'));
 var app = express();
 
-//app.set('views', __dirname);
 app.set('view engine', 'jade');
 
 app.use(
@@ -22,10 +21,6 @@ app.use(
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-//app.use(express.static(__dirname + '/public'));
-
 
 var mandrillTransport = require('nodemailer-mandrill-transport');
 
