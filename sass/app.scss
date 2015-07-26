@@ -30,7 +30,7 @@ $ts-blur: 12px;
 $ts-opacity: 1;
 
 $bs-distance: 8px;
-$bs-blur:30px;
+$bs-blur:12px;
 $bs-opacity: .75;
 $bs-spread: 1px;
 
@@ -68,8 +68,8 @@ html,body
     background-attachment: fixed;
     // background-size: 59px 34px;
     //background-size: 118px 68px;
-    background-size: 94px 54px;
     //background-size: 88px 51px;
+    background-size: 94px 54px;
 }
 
 .banner{
@@ -237,9 +237,5 @@ html,body
 // Larger devices
 @media (min-width: 768px){
     .banner h1, .banner h2, .banner h3, .banner h4 {padding: 0}
-    #summary .container{
-        width: 100%;
-        padding-left:50px;
-        padding-right:50px;
-    }
+    #summary .container{width: 100%; padding-left:50px; padding-right:50px;}
 }
