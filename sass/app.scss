@@ -46,6 +46,10 @@ html{width: auto !important; overflow-x: hidden !important;}
 
 body {font-family: $open-sans; color:$darkish-grey}
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html,body
 {
     width: 100%;
