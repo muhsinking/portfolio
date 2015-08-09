@@ -25,14 +25,14 @@ $skills-color: $purple;
 $projects-color: $blue;
 $contact-color: $green;
 
-$ts-distance: 8px;
-$ts-blur: 8px;
+$ts-distance: 4px;
+$ts-blur: 4px;
 $ts-opacity: 1;
 
-$bs-distance: 8px;
-$bs-blur:8px;
+$bs-distance: 4px;
+$bs-blur:4px;
 $bs-opacity: .75;
-$bs-spread: 1px;
+$bs-spread: 0px;
 
 
 // General styles
@@ -81,20 +81,20 @@ html,body
 
         .hex-tile{opacity: 0;}
 
-        -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
-        box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
+        // -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
+        // -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.3);
 
         &#summary{
-            -webkit-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
-            box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
+            // -webkit-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
+            // -moz-box-shadow: 0px -3px 25px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px -2px 4px 5px rgba(0,0,0,0.3);
         }
 
         &#contact{
             -webkit-box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
-            box-shadow: 0px 10px 20px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px 5px 4px 3px rgba(0,0,0,0.3);
         }
 
         .row{
