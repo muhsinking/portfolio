@@ -232,3 +232,5 @@ $RECYCLE.BIN/
 
 private/
 public/css/app.css
+
+*.gdoc
