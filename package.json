@@ -4,11 +4,11 @@
   "description": "The portfolio of Muhsin King",
   "main": "server.js",
   "dependencies": {
-    "express": "~4.13.0",
+    "express": "*",
     "nodemailer": "~1.4.0",
     "nodemailer-mandrill-transport": "~0.3.0",
-    "node-sass":"~3.2.0",
-    "jade":"*",
+    "node-sass":"*",
+    "pug":"*",
     "node-sass-middleware":"*",
     "normalize.css":"*"
   },
