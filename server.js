@@ -3,11 +3,11 @@ var express = require('express');
 var fs = require('fs');
 var sassMiddleware = require('node-sass-middleware');
 var path = require('path');
-var jade = require('jade');
+var pug = require('pug');
 // var mandrillApi = JSON.parse(fs.readFileSync('private/apikey.json','utf8'));
 var app = express();
 
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(
  sassMiddleware({

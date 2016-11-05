@@ -6,7 +6,6 @@
   "dependencies": {
     "express": "*",
     "nodemailer": "~1.4.0",
-    "nodemailer-mandrill-transport": "~0.3.0",
     "node-sass":"*",
     "pug":"*",
     "node-sass-middleware":"*",
