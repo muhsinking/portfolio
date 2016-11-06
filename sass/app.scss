@@ -120,11 +120,11 @@ html,body
 
     p{font-size: 25px; color:$lighter-grey; font-family: $ubuntu;  line-height: 180%;}
 
-    .photo{width:140px; height: 140px; background-color: $lighter-grey; border-radius: 50%; margin:5px 0 30px 0;
+    .photo{width:150px; height: 150px; background-color: white; border-radius: 50%; margin:5px 0 20px 0;
         -webkit-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
         -moz-box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
         box-shadow: 0px $bs-distance $bs-blur $bs-spread rgba(0,0,0,$bs-opacity);
-        background-size: 140px; background-repeat: no-repeat; background-position: 50% 20%; background-image: url('../images/selfie-strange.jpg');
+        background-size: 190px; background-repeat: no-repeat; background-position: 45% 10%; background-image: url('../images/self-illustration-transparent.png');
     }
 
     .fa-stack{color: $dark-grey;
