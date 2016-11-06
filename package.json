@@ -20,7 +20,10 @@
     "type": "git",
     "url": "git://github.com/muhsinking/portfolio.git"
   },
-  "engine": "node >= 0.4.1",
+  "engines": {
+    "node" ">= 0.4.1"
+    "npm" : "~3.x.x"
+  },
   "author": "Muhsin King",
   "license": "BSD-2-Clause",
   "bugs": {
