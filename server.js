@@ -6,6 +6,7 @@ var path = require('path');
 var pug = require('pug');
 // var mandrillApi = JSON.parse(fs.readFileSync('private/apikey.json','utf8'));
 var app = express();
+var port = process.env.port || 8080; // 8080 for local or whatever number u want
 
 app.set('view engine', 'pug');
 
@@ -56,6 +57,6 @@ app.get('/', function (req, res) {
 // 	});
 // });
 
-app.listen(3000,function(){
-	console.log("Express started on port 3000");
+app.listen(port,function(){
+	console.log("Express started on port " + port);
 });
