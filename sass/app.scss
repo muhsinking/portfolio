@@ -152,12 +152,12 @@ html,body
     .right{text-align: right;}
     .left{text-align: left; }
     p{font-size:17px; line-height: 200%;}
-    h4{ font-size: 24px; font-family: $raleway; font-weight: 300;}
+    h4{font-size: 24px; font-family: $raleway; font-weight: 300;}
 }
 
-#skills{
+#skills {
     .fa{color:$skills-color;}
-    a {color:$skills-color; &:hover{color:$purple-alt;text-decoration:none;}}
+    a{color:$skills-color; &:hover{color:$purple-alt;text-decoration:none;}}
 
     .banner.container {background-color: $skills-color;}
     .container:not(.banner){min-width: 80%; max-width: 95%; text-align: center;}
