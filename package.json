@@ -7,7 +7,7 @@
     "express": "*",
     "nodemailer": "~1.4.0",
     "node-sass":"*",
-    "pug":">= ",
+    "pug":"*",
     "node-sass-middleware":"0.9.8",
     "normalize.css":"*"
   },
