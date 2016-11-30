@@ -7,8 +7,8 @@
     "express": "*",
     "nodemailer": "~1.4.0",
     "node-sass":"*",
-    "pug":"*",
-    "node-sass-middleware":"*",
+    "pug":">= ",
+    "node-sass-middleware":"0.9.8",
     "normalize.css":"*"
   },
   "devDependencies": {},

@@ -1,2 +1,2 @@
 Portfolio of Muhsin King  
-Working files: views/index.jade, sass/app.scss
+Working files: views/index.pug, sass/app.scss
