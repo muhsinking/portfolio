@@ -1,17 +1,17 @@
 {
   "name": "muhsinking.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The portfolio of Muhsin King",
   "main": "server.js",
   "dependencies": {
     "express": "*",
-    "nodemailer": "~1.4.0",
-    "node-sass":"*",
-    "pug":"*",
-    "node-sass-middleware":"*",
-    "normalize.css":"*"
+    "pug": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-sass": "^2.3.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -22,7 +22,7 @@
   },
   "engines": {
     "node": ">=0.4.1",
-    "npm" : "~3.x.x"
+    "npm": "~3.x.x"
   },
   "author": "Muhsin King",
   "license": "BSD-2-Clause",
