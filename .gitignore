@@ -231,6 +231,9 @@ $RECYCLE.BIN/
 *.lnk
 
 private/
+<<<<<<< HEAD
 # public/css/app.css
+=======
+>>>>>>> a5e6b7695fb8d6064cdfab419e7c43ea58ae631a
 
 *.gdoc
