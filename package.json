@@ -21,7 +21,7 @@
     "url": "git://github.com/muhsinking/portfolio.git"
   },
   "engines": {
-    "node": "7.2.0",
+    "node": "6.9.0",
     "npm": "~3.x.x"
   },
   "author": "Muhsin King",
