@@ -7,6 +7,7 @@ Setup
 
 Compile
 > gulp sass
+
 > gulp views
 
 Start
